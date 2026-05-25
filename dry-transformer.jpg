@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page Not Found | Apex Power Systems</title>
+<meta name="description" content="Page not found. Return to Apex Power Systems homepage.">
+<style>
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#061a31;color:white;display:grid;place-items:center;min-height:100vh;padding:28px}
+.box{max-width:720px;text-align:center}
+h1{font-size:clamp(46px,8vw,88px);letter-spacing:-.06em;margin:0 0 14px}
+p{color:rgba(255,255,255,.78);font-size:18px}
+a{display:inline-flex;margin:10px;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,#FF8A1D,#ffb03a);color:#15110a;text-decoration:none;font-weight:850}
+.secondary{background:white;color:#061a31}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>404</h1>
+<p>The page you are looking for was not found. Return to Apex Power Systems or send us your product requirements.</p>
+<a href="/">Back to Home</a>
+<a class="secondary" href="/contact/">Contact Apex</a>
+</div>
+</body>
+</html>
