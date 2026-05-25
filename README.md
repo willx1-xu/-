@@ -95,13 +95,13 @@ Vercel and generic static hosting remain compatible for displaying the website. 
 
 ## SEO Notes
 
-The current placeholder domain is:
+The current deployed domain is:
 
 ```text
-https://www.apexpowersystems.com
+https://apexps.netlify.app
 ```
 
-Replace this with the final domain in:
+If a custom production domain is added later, replace this URL in:
 
 ```text
 sitemap.xml

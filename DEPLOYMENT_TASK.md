@@ -132,17 +132,17 @@ Recommended:
 
 Keep `.htaccess` for Apache hosting.
 
-### 4. Fix Domain Placeholders
+### 4. Confirm Deployment Domain
 
 The current sitemap uses:
 
 ```text
-https://www.apexpowersystems.com
+https://apexps.netlify.app
 ```
 
-When the final domain is provided, replace all sitemap and canonical URLs with the final domain.
+The current live Netlify domain is used for sitemap and canonical URLs.
 
-If no final domain is provided yet, keep the current placeholder domain but clearly document where to change it.
+If a custom production domain is provided later, replace all sitemap, canonical, and Open Graph URLs with that domain.
 
 ### 5. Add README.md
 
