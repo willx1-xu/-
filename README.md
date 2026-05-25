@@ -42,6 +42,7 @@ contact/index.html
 2. Import the GitHub repository into Netlify.
 3. Set publish directory to `.`
 4. Deploy.
+5. In Netlify Forms, configure submission notifications for `rfq` to `xuke@link-jl.com`.
 
 ### Generic Hosting / cPanel / Apache
 
@@ -72,21 +73,25 @@ contact/
 
 ## Form Integration
 
-RFQ forms are currently static unless Codex or a developer connects them to a form endpoint.
+All RFQ and contact forms are configured for Netlify Forms using the form name `rfq`. Submissions include:
 
-Recommended options:
+- Name
+- Email
+- Phone / WhatsApp
+- Company
+- Country
+- Product or solution interest
+- Voltage / capacity / power
+- Quantity / project scale
+- Message
 
-- Formspree
-- Getform
-- Basin
-- Netlify Forms
-- Custom backend email handler
-
-All form submissions should go to:
+After the first Netlify deployment, enable email notifications for `rfq` submissions to:
 
 ```text
 xuke@link-jl.com
 ```
+
+Vercel and generic static hosting remain compatible for displaying the website. Form processing on those hosts requires connecting the same named fields to a form endpoint or backend handler.
 
 ## SEO Notes
 
