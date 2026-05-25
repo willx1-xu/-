@@ -26,8 +26,8 @@ All RFQ entry points submit the same `rfq` form fields: name, email, phone / Wha
 ## Before Production Launch
 
 - In Netlify, open **Domain management** > **Add domain** to attach the production domain and complete the DNS instructions shown by Netlify.
-- If the final domain is `https://www.apexpowersystems.com`, no SEO URL update is needed.
-- If the final domain differs, replace the placeholder domain in `sitemap.xml`, `robots.txt`, canonical tags, and Open Graph URLs, then redeploy.
+- The current deployed domain is `https://apexps.netlify.app`; no SEO URL update is needed while this remains the public site URL.
+- If a custom production domain is added later, replace this domain in `sitemap.xml`, `robots.txt`, canonical tags, and Open Graph URLs, then redeploy.
 - Verify `/404.html`, `/robots.txt`, and `/sitemap.xml` on the deployed domain.
 
 ## References

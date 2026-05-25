@@ -6,7 +6,7 @@ Open:
 Deployment:
 - Upload all files and folders in this package to your web root.
 - If your hosting uses Apache, keep .htaccess.
-- Replace placeholder domain in sitemap.xml if final domain is not https://www.apexpowersystems.com.
+- Replace the current deployed domain in sitemap.xml if a custom domain later replaces https://apexps.netlify.app.
 - Submit sitemap.xml to Google Search Console after launch.
 
 Contact info included:
@@ -18,7 +18,7 @@ Resources page:
 
 Next recommended work:
 - Add final logo
-- Replace placeholder domain with final domain
+- Replace the Netlify domain with a future custom production domain, if applicable
 - Connect RFQ forms to email/CRM
 - Add Google Analytics / Search Console
 - Add real PDF catalogs when approved
