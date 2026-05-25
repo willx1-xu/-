@@ -461,14 +461,14 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
         <h2>Need Product Selection or Custom Configuration?</h2>
         <p>Send voltage, capacity, current, charging power, communication protocol, quantity, project country, or technical drawings. Apex will help you match the suitable equipment and prepare a project-based quotation.</p>
       </div>
-      <form>
+      <form name="rfq" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="rfq"><p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
         <div class="form-grid">
-          <input placeholder="Name">
-          <input placeholder="Email">
-          <input placeholder="Company">
-          <input placeholder="Country">
-          <select class="full">
-            <option>Product Interest</option>
+          <input type="text" name="name" autocomplete="name" placeholder="Name" required>
+          <input type="email" name="email" autocomplete="email" placeholder="Email" required><input type="tel" name="phone" autocomplete="tel" placeholder="Phone / WhatsApp" required>
+          <input type="text" name="company" autocomplete="organization" placeholder="Company" required>
+          <input type="text" name="country" autocomplete="country-name" placeholder="Country" required>
+          <select name="interest" class="full" required>
+            <option value="" selected disabled>Product Interest</option>
             <option>Power Transformer</option>
             <option>Prefabricated Substation</option>
             <option>MV/LV Switchgear</option>
@@ -476,10 +476,10 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
             <option>EV Charging Controller</option>
             <option>Complete Grid-to-Plug Solution</option>
           </select>
-          <input placeholder="Voltage / Capacity / Power">
-          <input placeholder="Quantity">
-          <textarea placeholder="Technical requirements or project description"></textarea>
-          <button class="btn btn-orange full" type="button">Submit Product RFQ</button>
+          <input type="text" name="voltage_capacity_power" autocomplete="off" placeholder="Voltage / Capacity / Power" required>
+          <input type="text" name="quantity_project_scale" autocomplete="off" placeholder="Quantity" required>
+          <textarea name="message" placeholder="Technical requirements or project description" required></textarea>
+          <button class="btn btn-orange full" type="submit">Submit Product RFQ</button>
         </div>
       </form>
     </div>
