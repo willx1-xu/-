@@ -95,10 +95,10 @@ Vercel and generic static hosting remain compatible for displaying the website. 
 
 ## SEO Notes
 
-The current deployed domain is:
+The canonical production domain is:
 
 ```text
-https://apexps.netlify.app
+https://www.link-jl.com
 ```
 
 If a custom production domain is added later, replace this URL in:

@@ -6,7 +6,7 @@ Open:
 Deployment:
 - Upload all files and folders in this package to your web root.
 - If your hosting uses Apache, keep .htaccess.
-- Replace the current deployed domain in sitemap.xml if a custom domain later replaces https://apexps.netlify.app.
+- Confirm sitemap.xml targets the canonical production domain https://www.link-jl.com before custom-domain binding.
 - Submit sitemap.xml to Google Search Console after launch.
 
 Contact info included:

@@ -26,8 +26,8 @@ All RFQ entry points submit the same `rfq` form fields: name, email, phone / Wha
 ## Before Production Launch
 
 - In Netlify, open **Domain management** > **Add domain** to attach the production domain and complete the DNS instructions shown by Netlify.
-- The current deployed domain is `https://apexps.netlify.app`; no SEO URL update is needed while this remains the public site URL.
-- If a custom production domain is added later, replace this domain in `sitemap.xml`, `robots.txt`, canonical tags, and Open Graph URLs, then redeploy.
+- The canonical production domain is `https://www.link-jl.com`; SEO URL files should target this domain before binding it in Netlify.
+- Confirm this domain in `sitemap.xml`, `robots.txt`, canonical tags, and Open Graph URLs, then redeploy.
 - Verify `/404.html`, `/robots.txt`, and `/sitemap.xml` on the deployed domain.
 
 ## References

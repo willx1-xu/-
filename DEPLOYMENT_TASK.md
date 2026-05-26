@@ -137,10 +137,10 @@ Keep `.htaccess` for Apache hosting.
 The current sitemap uses:
 
 ```text
-https://apexps.netlify.app
+https://www.link-jl.com
 ```
 
-The current live Netlify domain is used for sitemap and canonical URLs.
+The canonical production domain is used for sitemap and canonical URLs.
 
 If a custom production domain is provided later, replace all sitemap, canonical, and Open Graph URLs with that domain.
 
