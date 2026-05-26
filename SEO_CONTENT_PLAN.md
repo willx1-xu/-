@@ -3,7 +3,7 @@
 ## Scope and Goals
 
 This plan is for the live Apex Power Systems static website:
-`https://apexps.netlify.app`.
+`https://www.link-jl.com`.
 
 The goal is to attract qualified international B2B searches for power
 distribution equipment, EV charging infrastructure, and integrated

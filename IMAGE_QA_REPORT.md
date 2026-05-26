@@ -2,7 +2,7 @@
 
 ## Audit Scope
 
-- Site audited: `https://apexps.netlify.app`
+- Site audited: Netlify deployment before custom-domain binding
 - Audit date: 2026-05-25
 - Coverage: 35 URLs in the live `sitemap.xml`, 115 live `<img>` references,
   repository image references, and visual review of the relevant existing

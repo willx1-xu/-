@@ -10,4 +10,4 @@ Deployment preparation validation:
 - Sitemap coverage, canonical URLs, robots sitemap reference, and public-page SEO metadata were checked.
 - Contact email preserved: xuke@link-jl.com
 - Phone / WhatsApp preserved: +86 13201571341
-- Manual deployment step: replace `https://apexps.netlify.app` if a different production domain is chosen, then configure Netlify form notifications to `xuke@link-jl.com`.
+- Production SEO domain confirmed as `https://www.link-jl.com`; configure Netlify form notifications to `xuke@link-jl.com` during binding.
