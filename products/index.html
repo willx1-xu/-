@@ -32,7 +32,7 @@ section{padding:82px 0} .soft{background:var(--soft)} .kicker{display:block;text
 .rfq{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:34px;padding:44px;display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start;box-shadow:var(--shadow)} .rfq h2{color:#fff} .rfq p{color:rgba(255,255,255,.76)} form{background:#fff;border-radius:26px;padding:26px} .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px} input,select,textarea{width:100%;border:1px solid var(--line);background:#fbfdff;border-radius:14px;padding:14px;font:inherit;outline:none;color:var(--ink)} textarea{grid-column:1/-1;min-height:112px;resize:vertical} .full{grid-column:1/-1}
 footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .footer-grid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:30px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:36px} footer h4{color:#fff;margin:0 0 14px} footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:14px} .foot-brand{color:#fff;margin-bottom:14px} .copyright{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:22px;font-size:13px}
 @media(max-width:1100px){nav ul{display:none}.menu{display:inline-flex}.hero .container{grid-template-columns:1fr}.product-grid{grid-template-columns:repeat(2,1fr)}.system-block,.rfq{grid-template-columns:1fr}.footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.container{width:min(100% - 28px,var(--max))}.topbar{display:none}.nav{height:68px}.navbtn{display:none}.brand{font-size:18px}.hero .container{min-height:auto;padding:54px 0}.hero-img img{height:250px}section{padding:60px 0}.product-nav{top:68px}.product-grid,.system-block,.rfq,.footer-grid{grid-template-columns:1fr}.category-title{display:block}.form-grid{grid-template-columns:1fr}textarea,.full{grid-column:auto}h1{font-size:42px}}
+@media(max-width:760px){.container{width:min(100% - 28px,var(--max))}.topbar{display:none}.nav{height:68px;gap:10px}.navbtn{display:none}.brand{font-size:18px}.menu{padding:10px 11px;font-size:13px}.hero .container{min-height:auto;padding:54px 0}.hero-img img{height:250px}section{padding:60px 0}.product-nav{top:68px}.product-grid,.system-block,.rfq,.footer-grid{grid-template-columns:1fr}.category-title{display:block}.form-grid{grid-template-columns:1fr}textarea,.full{grid-column:auto}h1{font-size:42px}}
 </style>
 
 <link rel="canonical" href="https://apexps.netlify.app/products/">
@@ -47,7 +47,7 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
 </head>
 <body>
 <div class="topbar"><div class="container"><span>Grid-to-Plug Solutions · Power Distribution · EV Charging Infrastructure</span><span>Nanjing, Jiangsu, China · OEM/ODM · IEC-Compliant Design</span></div></div>
-<header><div class="container nav"><a href="../" class="brand"><span class="mark">A</span><span>Apex Power Systems</span></a><nav><ul><li><a href="../">Home</a></li><li><a href="#products">Products</a></li><li><a href="#systems">Systems</a></li><li><a href="#rfq">RFQ</a></li></ul></nav><a class="btn btn-orange navbtn" href="#rfq">Request A Quote</a><button class="menu" onclick="document.querySelector('#products').scrollIntoView()">Menu</button></div></header>
+<header><div class="container nav"><a href="../" class="brand"><span class="mark">A</span><span>Apex Power Systems</span></a><nav><ul><li><a href="../">Home</a></li><li><a href="#products">Products</a></li><li><a href="#systems">Systems</a></li><li><a href="#rfq">RFQ</a></li></ul></nav><a class="btn btn-orange navbtn" href="#rfq">Request A Quote</a><a class="menu" href="#products">Catalog</a></div></header>
 
 <main>
 <section class="hero">
@@ -58,7 +58,7 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
       <p>Explore Apex power transformers, prefabricated substations, MV/LV switchgear, DC fast charging piles, AC charging piles, and intelligent EV charger controllers for global power distribution and EV charging projects.</p>
       <a class="btn btn-orange" href="#rfq">Send Product Requirements</a>
     </div>
-    <div class="hero-img"><img src="../assets/hero-industry.jpg" alt="Apex product portfolio"></div>
+    <div class="hero-img"><img src="../assets/integrated/production-03.jpg" alt="Apex equipment manufacturing and assembly capability"></div>
   </div>
 </section>
 
@@ -88,8 +88,8 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
 
       <section id="power-transformers" class="category-section">
         <div class="category-title">
-          <span class="kicker">Power Transformers</span>
-          <h2>Power Transformers</h2>
+          <div><span class="kicker">Power Transformers</span><h2>Power Transformers</h2></div>
+          <a class="link" href="power-transformers/">Category Overview &rarr;</a>
         </div>
         <div class="product-grid">
     
@@ -158,8 +158,8 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
     
       <section id="prefabricated-substations" class="category-section">
         <div class="category-title">
-          <span class="kicker">Prefabricated Substations</span>
-          <h2>Prefabricated Substations</h2>
+          <div><span class="kicker">Compact Substations</span><h2>Compact / Box-Type Substations</h2></div>
+          <a class="link" href="compact-substations/">Category Overview &rarr;</a>
         </div>
         <div class="product-grid">
     
@@ -213,8 +213,8 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
     
       <section id="mv-lv-switchgear" class="category-section">
         <div class="category-title">
-          <span class="kicker">MV & LV Switchgear</span>
-          <h2>MV & LV Switchgear</h2>
+          <div><span class="kicker">Switchgear</span><h2>High &amp; Low Voltage Switchgear</h2></div>
+          <div><a class="link" href="high-voltage-switchgear/">High Voltage &rarr;</a>&nbsp;&nbsp;<a class="link" href="low-voltage-switchgear/">Low Voltage &rarr;</a></div>
         </div>
         <div class="product-grid">
     
@@ -283,8 +283,8 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
     
       <section id="ev-charging-equipment" class="category-section">
         <div class="category-title">
-          <span class="kicker">EV Charging Equipment</span>
-          <h2>EV Charging Equipment</h2>
+          <div><span class="kicker">EV Charging Equipment</span><h2>EV Chargers &amp; Controllers</h2></div>
+          <a class="link" href="ev-chargers-controllers/">Category Overview &rarr;</a>
         </div>
         <div class="product-grid">
     
@@ -368,8 +368,8 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
     
       <section id="ev-charger-controllers" class="category-section">
         <div class="category-title">
-          <span class="kicker">EV Charger Controllers</span>
-          <h2>EV Charger Controllers</h2>
+          <div><span class="kicker">EV Charger Controllers</span><h2>Control &amp; Protocol Equipment</h2></div>
+          <a class="link" href="ev-chargers-controllers/">Category Overview &rarr;</a>
         </div>
         <div class="product-grid">
     
