@@ -1,24 +1,30 @@
 # Apex Power Systems Static Website
 
-This is a static B2B industrial website for **Apex Power Systems Co., Ltd.**
-
-## Design System (2026 Redesign)
-
-The site uses a **monochrome + electric blue** high-end industrial design:
-
-- **Surfaces**: white `#fff`, off-black `#0b0d10`, light gray `#f5f6f7`
-- **Accent**: electric blue `#1e5eff` — the only chromatic voice, used for CTAs, links, and key highlights
-- **Type**: Space Grotesk (display) + Inter (body), loaded via Google Fonts
-- **Architecture**: all styling lives in one shared file — `assets/site.css` — referenced by every page. Inline per-page CSS was removed in the redesign, so the whole site (42 pages) updates from a single file.
-- **Layout**: sticky glassmorphism nav, dark hero sections with radial accent glow, card-based product grids, Netlify RFQ forms
-
-To restyle the entire site, edit `assets/site.css` only.
+This is a static B2B website for **Apex Power Systems Co., Ltd.** — focused on EV charging infrastructure.
 
 ## Positioning
 
-**Grid-to-Plug Power Distribution & EV Charging Solutions**
+**EV Charging Piles & Intelligent Charging Controllers**
 
-Apex Power Systems provides integrated power distribution and EV charging infrastructure equipment, including transformers, prefabricated substations, MV/LV switchgear, EV charging piles, and intelligent charging controllers.
+Apex Power Systems specializes in AC/DC EV charging piles (7kW to 480kW) and OCPP 1.6J/2.0-ready charging station controllers and protocol boards for commercial, public, fleet, and OEM/ODM projects.
+
+## Product Scope
+
+The site covers two focused product families (power transformers, substations, and switchgear were removed in the 2026 restructure):
+
+- **AC/DC Charging Piles** — 7kW AC, 40kW DC, 160kW/400kW dual-gun DC, 400kW truck charger, 480kW group charging
+- **Charging Station Controllers** — JC-6512 DC controller, JC-6513 hub controller, JC-6650 AC controller, JC-6620 OCPP board, JC-1301 CHAdeMO board
+- **Solutions** — EV charging stations, commercial buildings, OEM/ODM programs
+
+## Design System (v2 — Minimal High-End White)
+
+- **Surfaces**: white-led with generous whitespace; off-black `#0a0d11` for hero/footer contrast; light gray `#f7f8f9` for soft sections
+- **Accent**: electric blue `#1257e8` — restrained, used for CTAs, links, and key highlights
+- **Type**: Space Grotesk (display) + Inter (body), loaded via Google Fonts
+- **Architecture**: all styling lives in one shared file — `assets/site.css` — referenced by every page. Inline per-page CSS was removed, so the whole site updates from a single file.
+- **Layout**: sticky glassmorphism nav, dark hero with radial accent glow, 3-column product grids, Netlify RFQ forms
+
+To restyle the entire site, edit `assets/site.css` only.
 
 ## Contact
 
@@ -75,11 +81,8 @@ sitemap.xml
 assets/
 products/
 solutions/
-projects/
 about/
 quality/
-certificates/
-resources/
 contact/
 ```
 
@@ -93,7 +96,7 @@ All RFQ and contact forms are configured for Netlify Forms using the form name `
 - Company
 - Country
 - Product or solution interest
-- Voltage / capacity / power
+- Power rating / connector / protocol
 - Quantity / project scale
 - Message
 
