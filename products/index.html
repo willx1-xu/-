@@ -5,35 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products | Apex Power Systems</title>
 <meta name="description" content="Explore Apex Power Systems products including power transformers, prefabricated substations, MV/LV switchgear, DC fast charging piles, AC charging piles, and intelligent EV charger controllers.">
-<style>
-:root {
-  --navy:#061a31; --navy2:#0a2949; --blue:#126DFF; --cyan:#1DD3FF; --green:#20B26B; --orange:#FF8A1D;
-  --ink:#102033; --muted:#65748a; --soft:#F4F7FA; --line:#DDE7F0; --white:#fff;
-  --shadow:0 24px 70px rgba(6,26,49,.14); --shadow2:0 14px 35px rgba(6,26,49,.08); --max:1240px;
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.55;background:#fff} a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
-.container{width:min(var(--max),calc(100% - 42px));margin:auto}
-.topbar{background:var(--navy);color:rgba(255,255,255,.8);font-size:13px} .topbar .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:9px 0}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(221,231,240,.85)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px} .brand{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:900;font-size:20px;letter-spacing:-.03em;white-space:nowrap}
-.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--green));display:grid;place-items:center;color:#fff;box-shadow:0 14px 24px rgba(18,109,255,.22)}
-nav ul{display:flex;list-style:none;gap:26px;margin:0;padding:0;font-size:14px;font-weight:760;color:#334b66} nav a:hover{color:var(--blue)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid transparent;font-weight:850;font-size:14px;transition:.2s;white-space:nowrap} .btn:hover{transform:translateY(-2px)} .btn-orange{background:linear-gradient(135deg,var(--orange),#ffb03a);color:#15110a;box-shadow:0 14px 30px rgba(255,138,29,.26)} .btn-white{background:#fff;color:var(--navy);border-color:rgba(255,255,255,.25)} .menu{display:none;background:var(--soft);border:none;border-radius:12px;padding:11px 14px;font-weight:900;color:var(--navy)}
-.hero{position:relative;background:radial-gradient(circle at 80% 12%,rgba(29,211,255,.24),transparent 30%),linear-gradient(135deg,#061a31,#0a2949 54%,#0c3657);color:#fff;overflow:hidden}
-.hero .container{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center;min-height:560px;padding:68px 0}
-.eyebrow{display:inline-flex;border:1px solid rgba(29,211,255,.34);background:rgba(29,211,255,.1);color:#c7f6ff;padding:8px 12px;border-radius:999px;font-weight:850;font-size:13px;margin-bottom:20px}
-h1{font-size:clamp(42px,5.3vw,72px);line-height:.98;letter-spacing:-.06em;margin:0 0 22px} .hero p{font-size:18px;color:rgba(255,255,255,.82);max-width:690px;margin:0 0 30px}
-.hero-img{border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 90px rgba(0,0,0,.25);background:rgba(255,255,255,.08);padding:16px} .hero-img img{width:100%;height:390px;object-fit:cover;border-radius:24px}
-section{padding:82px 0} .soft{background:var(--soft)} .kicker{display:block;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:950;font-size:12px;margin-bottom:12px} h2{font-size:clamp(30px,4vw,48px);line-height:1.06;letter-spacing:-.045em;color:var(--navy);margin:0} .lead{font-size:17px;color:var(--muted);margin:16px 0 0;max-width:800px}
-.product-nav{position:sticky;top:76px;z-index:40;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(6,26,49,.04)} .product-nav .container{display:flex;gap:10px;overflow:auto;padding:13px 0} .product-nav a{white-space:nowrap;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-size:13px;font-weight:850;color:#28425a} .product-nav a:hover{background:#eaf3ff;color:var(--blue)}
-.category-section{padding:70px 0;border-bottom:1px solid var(--line)} .category-section:last-child{border-bottom:none} .category-title{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:28px}
-.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px} .product-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow2);transition:.2s} .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)} .image-box{height:236px;background:linear-gradient(180deg,#f8fbfd,#eef4f8);display:grid;place-items:center;overflow:hidden} .image-box img{width:100%;height:100%;object-fit:contain;padding:14px} .body{padding:22px} .tag{display:inline-flex;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);background:#eef5ff;padding:6px 9px;border-radius:999px;margin-bottom:12px} h3{font-size:19px;line-height:1.18;color:var(--navy);margin:0 0 10px;letter-spacing:-.02em} .product-card p{color:var(--muted);font-size:14px;margin:0 0 16px} .actions{display:flex;align-items:center;justify-content:space-between;gap:12px} .link{color:var(--blue);font-weight:950;font-size:14px} .quote{background:#fff4e7;color:#a74d00;font-weight:950;font-size:13px;padding:8px 12px;border-radius:999px}
-.system-block{display:grid;grid-template-columns:1fr 1fr;gap:24px} .system-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:32px;box-shadow:var(--shadow2)} .system-card h3{font-size:29px;color:var(--navy);margin:0 0 10px;letter-spacing:-.035em} .system-card p{color:var(--muted)} .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px} .chip{border-radius:999px;background:var(--soft);border:1px solid var(--line);padding:10px 12px;font-size:13px;font-weight:800;color:#28425a}
-.rfq{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:34px;padding:44px;display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start;box-shadow:var(--shadow)} .rfq h2{color:#fff} .rfq p{color:rgba(255,255,255,.76)} form{background:#fff;border-radius:26px;padding:26px} .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px} input,select,textarea{width:100%;border:1px solid var(--line);background:#fbfdff;border-radius:14px;padding:14px;font:inherit;outline:none;color:var(--ink)} textarea{grid-column:1/-1;min-height:112px;resize:vertical} .full{grid-column:1/-1}
-footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .footer-grid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:30px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:36px} footer h4{color:#fff;margin:0 0 14px} footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:14px} .foot-brand{color:#fff;margin-bottom:14px} .copyright{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:22px;font-size:13px}
-@media(max-width:1100px){nav ul{display:none}.menu{display:inline-flex}.hero .container{grid-template-columns:1fr}.product-grid{grid-template-columns:repeat(2,1fr)}.system-block,.rfq{grid-template-columns:1fr}.footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.container{width:min(100% - 28px,var(--max))}.topbar{display:none}.nav{height:68px;gap:10px}.navbtn{display:none}.brand{font-size:18px}.menu{padding:10px 11px;font-size:13px}.hero .container{min-height:auto;padding:54px 0}.hero-img img{height:250px}section{padding:60px 0}.product-nav{top:68px}.product-grid,.system-block,.rfq,.footer-grid{grid-template-columns:1fr}.category-title{display:block}.form-grid{grid-template-columns:1fr}textarea,.full{grid-column:auto}h1{font-size:42px}}
-</style>
+
 
 <link rel="canonical" href="https://www.link-jl.com/products/">
 <link rel="icon" href="../assets/apex-favicon.svg">
@@ -44,6 +16,10 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
 <meta property="og:site_name" content="Apex Power Systems">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <div class="topbar"><div class="container"><span>Grid-to-Plug Solutions · Power Distribution · EV Charging Infrastructure</span><span>Nanjing, Jiangsu, China · OEM/ODM · IEC-Compliant Design</span></div></div>
@@ -69,7 +45,7 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
     <span class="kicker">Product Architecture</span>
     <h2>Organized Around Two Infrastructure Systems</h2>
     <p class="lead">The Apex product portfolio is structured for international B2B customers who need complete project support rather than disconnected single products.</p>
-    <div class="system-block" style="margin-top:28px">
+    <div class="system-block" >
       <div class="system-card">
         <h3>Power Distribution System</h3>
         <p>Transformer, substation, and switchgear products for grid-side electrical distribution, protection, and power management.</p>
@@ -457,7 +433,7 @@ footer{background:#041326;color:rgba(255,255,255,.68);padding:56px 0 24px} .foot
   <div class="container">
     <div class="rfq">
       <div>
-        <span class="kicker" style="color:#9cefff">Product RFQ</span>
+        <span class="kicker" >Product RFQ</span>
         <h2>Need Product Selection or Custom Configuration?</h2>
         <p>Send voltage, capacity, current, charging power, communication protocol, quantity, project country, or technical drawings. Apex will help you match the suitable equipment and prepare a project-based quotation.</p>
       </div>

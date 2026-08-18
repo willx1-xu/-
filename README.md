@@ -2,6 +2,18 @@
 
 This is a static B2B industrial website for **Apex Power Systems Co., Ltd.**
 
+## Design System (2026 Redesign)
+
+The site uses a **monochrome + electric blue** high-end industrial design:
+
+- **Surfaces**: white `#fff`, off-black `#0b0d10`, light gray `#f5f6f7`
+- **Accent**: electric blue `#1e5eff` — the only chromatic voice, used for CTAs, links, and key highlights
+- **Type**: Space Grotesk (display) + Inter (body), loaded via Google Fonts
+- **Architecture**: all styling lives in one shared file — `assets/site.css` — referenced by every page. Inline per-page CSS was removed in the redesign, so the whole site (42 pages) updates from a single file.
+- **Layout**: sticky glassmorphism nav, dark hero sections with radial accent glow, card-based product grids, Netlify RFQ forms
+
+To restyle the entire site, edit `assets/site.css` only.
+
 ## Positioning
 
 **Grid-to-Plug Power Distribution & EV Charging Solutions**

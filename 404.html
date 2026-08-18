@@ -5,21 +5,31 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page Not Found | Apex Power Systems</title>
 <meta name="description" content="Page not found. Return to Apex Power Systems homepage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 <style>
-body{margin:0;font-family:Inter,Arial,sans-serif;background:#061a31;color:white;display:grid;place-items:center;min-height:100vh;padding:28px}
-.box{max-width:720px;text-align:center}
-h1{font-size:clamp(46px,8vw,88px);letter-spacing:-.06em;margin:0 0 14px}
-p{color:rgba(255,255,255,.78);font-size:18px}
-a{display:inline-flex;margin:10px;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,#FF8A1D,#ffb03a);color:#15110a;text-decoration:none;font-weight:850}
-.secondary{background:white;color:#061a31}
+  body { background: var(--dark); color: #fff; min-height: 100dvh; display: grid; place-items: center; padding: 28px; }
+  .box { max-width: 640px; text-align: center; }
+  .code { font-family: var(--font-display); font-size: clamp(72px, 14vw, 140px); line-height: 1; letter-spacing: -.05em; font-weight: 700; margin: 0 0 12px; }
+  .code span { color: var(--accent); }
+  .box h1 { font-size: clamp(22px, 3vw, 30px); margin: 0 0 14px; }
+  .box p { color: rgba(255,255,255,.66); font-size: 16.5px; margin: 0 0 32px; }
+  .box .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .secondary { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.22); color: #fff; }
+  .secondary:hover { border-color: #fff; background: rgba(255,255,255,.1); }
 </style>
 </head>
 <body>
 <div class="box">
-<h1>404</h1>
-<p>The page you are looking for was not found. Return to Apex Power Systems or send us your product requirements.</p>
-<a href="/">Back to Home</a>
-<a class="secondary" href="/contact/">Contact Apex</a>
+  <div class="code">4<span>0</span>4</div>
+  <h1>Page Not Found</h1>
+  <p>The page you are looking for was not found. Return to Apex Power Systems or send us your product requirements.</p>
+  <div class="actions">
+    <a class="btn btn-blue" href="./">Back to Home</a>
+    <a class="btn secondary" href="./contact/">Contact Apex</a>
+  </div>
 </div>
 </body>
 </html>
