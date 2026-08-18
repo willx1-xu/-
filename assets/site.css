@@ -146,7 +146,7 @@ header nav a:hover::after { width: 100%; }
     radial-gradient(620px 420px at 82% 12%, rgba(30, 94, 255, .16), transparent 62%),
     radial-gradient(520px 380px at 8% 88%, rgba(30, 94, 255, .07), transparent 60%);
 }
-.hero .container { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; padding: 84px 0; }
+.hero .container { position: relative; display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: center; padding: 84px 0; }
 .hero .container > div:only-child { grid-column: 1 / -1; max-width: 780px; }
 .hero h1 { font-size: clamp(40px, 5.4vw, 72px); line-height: 1.02; letter-spacing: -.045em; font-weight: 700; margin: 0 0 22px; }
 .hero p { color: rgba(255, 255, 255, .72); font-size: 17.5px; max-width: 620px; margin: 0 0 30px; }
@@ -164,9 +164,9 @@ header nav a:hover::after { width: 100%; }
   padding: 14px 16px; font-size: 13px; font-weight: 600; color: rgba(255, 255, 255, .82);
   background: rgba(255, 255, 255, .03);
 }
-.hero-visual { position: relative; min-height: 560px; }
+.hero-visual { position: relative; display: flex; flex-direction: column; gap: 18px; }
 .flow-card {
-  position: absolute; right: 0; top: 0; width: 94%;
+  position: relative; right: auto; top: auto; width: 100%;
   border-radius: var(--radius-lg); overflow: hidden;
   border: 1px solid var(--dark-line);
   background: rgba(255, 255, 255, .04);
@@ -176,12 +176,17 @@ header nav a:hover::after { width: 100%; }
 .visual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px; }
 .visual-grid img { height: 132px; width: 100%; object-fit: contain; background: #fff; border-radius: 12px; padding: 10px; }
 .signal {
-  position: absolute; left: 0; bottom: 16px; width: 320px;
+  position: relative; left: auto; top: auto; width: 100%;
+  display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
   background: #fff; color: var(--ink); border-radius: var(--radius-lg);
-  padding: 22px; box-shadow: var(--shadow-lg);
+  padding: 20px 24px; box-shadow: var(--shadow);
+  border: 1px solid var(--line);
 }
-.signal strong { display: block; font-family: var(--font-display); font-size: 24px; letter-spacing: -.03em; }
-.signal span { display: block; color: var(--muted); font-size: 13px; font-weight: 600; margin-top: 4px; }
+.signal > strong { flex: 0 0 auto; }
+.signal > span { flex: 1 1 220px; }
+.mini-flow { margin-left: auto; }
+.signal strong { font-family: var(--font-display); font-size: 24px; letter-spacing: -.03em; }
+.signal span { color: var(--muted); font-size: 13px; font-weight: 600; }
 .mini-flow { display: flex; align-items: center; gap: 7px; margin-top: 16px; flex-wrap: wrap; }
 .mini-flow b { font-size: 11px; font-weight: 700; background: var(--bg-soft); border: 1px solid var(--line); padding: 7px 9px; border-radius: 999px; color: var(--ink-2); }
 .mini-flow i { color: var(--accent); font-style: normal; font-weight: 700; }
@@ -418,6 +423,7 @@ tr:last-child td { border-bottom: none; }
   .hero .container, .hero .container.two-col { grid-template-columns: 1fr; padding: 64px 0; }
   .hero-visual { min-height: auto; }
   .flow-card { position: relative; width: 100%; }
+  .signal { position: relative; left: auto; bottom: auto; width: 100%; margin-top: 20px; }
   .products { grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
   .flow { grid-template-columns: repeat(2, 1fr); }
@@ -434,6 +440,7 @@ tr:last-child td { border-bottom: none; }
   .nav { min-height: 66px; gap: 10px; }
   .brand { font-size: 16px; }
   .navbtn { display: none; }
+  .btn { white-space: normal; min-height: 44px; padding: 0 16px; }
   .menu { padding: 9px 11px; font-size: 13px; }
   .float { display: none; }
   section { padding: 68px 0; }
